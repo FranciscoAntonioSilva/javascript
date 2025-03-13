@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Identificação</title>
+</head>
+<body>
+    <h1>Sistema de Identificação</h1>
+    <p>
+        <label for="pais">Informe seu país:</label>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Enviar" onclick="verificar()">
+    </p>
+    <div id="resposta"></div>
+
+    <script>
+        function verificar() {
+            var país = document.querySelector('input#pais').value
+            var res = document.querySelector('#resposta')
+            if (país != 'Brasil') {
+                res.innerHTML = `<p>Você é Estrangeiro!</p>`
+            } else {
+                res.innerHTML = '<p>Você é Brasileiro!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
