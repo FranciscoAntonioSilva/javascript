@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Tabuada</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="carregar()">
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            Testando...
+        <div>
+            <p>
+                <label for="num">Número: </label>
+                <input type="number" name="num" id="num">
+                <input type="button" value="Gerar tabuada" onclick="tabuada()">
+            </p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="images/fotomanha.jpg" alt="Foto da manhã">
+        <div>
+            <select name="tab" id="tab" size="10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
     </section>
     <footer>
